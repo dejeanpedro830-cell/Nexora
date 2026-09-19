@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a12">
+<link rel="manifest" href="manifest.json">
+<title>NEXORA — Make Progress Real</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header><img src="logo.svg" class="logo"><div><b>NEXORA</b><small>MAKE PROGRESS REAL.</small></div></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">MISSION CONTROL</p>
+      <h1>Turn your goal into your <span>next move.</span></h1>
+      <p class="muted">NEXORA breaks big goals into simple actions you can actually complete.</p>
+    </section>
+
+    <section class="card">
+      <label>What do you want to achieve?</label>
+      <input id="goal" placeholder="e.g. Get fit, study better, save money">
+      <select id="category">
+        <option>Personal</option><option>Study</option><option>Fitness</option>
+        <option>Money</option><option>Career</option><option>Skills</option>
+      </select>
+      <button id="create">Create my mission</button>
+    </section>
+
+    <section id="mission" class="card hidden">
+      <div class="row"><div><p class="eyebrow">YOUR NEXT MOVE</p><h2 id="goalTitle"></h2></div><strong id="xp">+50 XP</strong></div>
+      <p id="step" class="step"></p>
+      <button id="complete">Complete mission ✓</button>
+      <div class="progress"><i id="bar"></i></div>
+      <p id="status" class="muted">0% complete • Keep moving.</p>
+    </section>
+
+    <section class="card coach">
+      <p class="eyebrow">NEXORA COACH</p>
+      <h2>Need a push?</h2>
+      <p id="coachText" class="muted">Tell me your goal and I'll help you find a small next step.</p>
+      <div class="chips"><button data-q="motivation">Motivate me</button><button data-q="plan">Make a plan</button><button data-q="stuck">I'm stuck</button></div>
+    </section>
+  </main>
+  <footer>NEXORA • Your progress, one move at a time.</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
